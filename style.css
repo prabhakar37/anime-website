@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* background-color: #0f0f0f; */
+    color: #fff;
+}
+
+/* Navbar */
+header {
+    /* background: #1a1a1a; */
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    color: #ff4757;
+    margin: 0;
+}
+
+input{
+    padding: 5px 60px;
+}
+
+nav{
+    display: flex;
+    gap: 5rem;
+}
+
+nav ul{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    list-style: none;
+
+    gap: 20px;
+}
+nav ul li a{
+    text-decoration: none;         /* underline remove */
+}
+.nav-button{
+    display: flex;
+    gap: 20px;
+}
+
+button{
+    border-radius: 5px;
+    padding: 8px;
+}
+
+
+/* Hero Section */
+
+.hero {
+  background-color: #575656;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: #b88181;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+
+
+/* Anime Section */
+    .section {
+      font-family: "Mozilla Text", sans-serif;
+      padding: 40px;
+    }
+    .section h2 {
+      margin-bottom: 20px;
+    }
+    .anime-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+    }
+    .anime-card {
+      background: #1a1a1a;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .anime-card img {
+      width: 100%;
+      display: block;
+    }
+    .anime-card:hover {
+      transform: scale(1.05);
+    }
+    .anime-info {
+      padding: 10px;
+    }
+    .anime-info h3 {
+      margin: 5px 0;
+      font-size: 1rem;
+    }
+    .anime-info p {
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+
+
+/* Footer */
+    footer {
+      font-family: "Mozilla Text", sans-serif;
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+
+
+
+
+
+
+/*  ------------- media Query ------------------------ */
+
+
+/* Small devices (phones) */
+@media (max-width: 576px){
+
+    header{
+        padding: 5px;
+    }
+
+    h1{
+        font-size: medium;
+    }
+
+    input{
+        display: none;
+    }
+    nav ul{
+        display: none;
+    }
+    .nav-button{
+        display: flex;
+        gap: 10px;
+    }
+
+    button{
+        padding: 3px 5px;
+        font-size: 12px;
+    }
+    
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 577px) and (max-width: 768px){
+
+    header{
+        padding: 5px;
+    }
+
+    input{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        gap: 20px;
+    }
+    nav ul{
+        display: flex;
+        /* gap: 12px; */
+    }
+
+    .nav-button{
+        display: flex;
+        gap: 5px;
+    }
+    button{
+        padding: 3px 5px;
+        font-size: 12px;
+    }
+
+    nav ul li a{
+        font-size: 12px;
+    }
+
+}
+
+/* Medium devices (tablets, ≥768px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    header {
+        padding: 8px;
+    }
+
+    header h1 {
+        font-size: 30px;
+        margin: 0;
+    }
+
+
+    input {
+        padding: 5px 10px;
+    }
+    nav {
+        display: flex;
+        gap: 15px;
+    }
+    
+    .nav-button{
+        display: flex;
+        gap: 10px;
+    }
+
+    button {
+        padding: 2px 5px;
+        font-size: 15px;
+    }
+}
+/* Large devices (small laptops / desktops) */
+@media (min-width: 993px) and (max-width: 1200px){
+    header {
+        padding: 10px;
+    }
+     input {
+        padding: 5px 30px;
+    }
+    nav {
+        display: flex;
+        gap: 35px;
+    }
+    .nav-button{
+        display: flex;
+        gap: 15px;
+    }
+}
+
+/* Extra-large devices (1200px+) */
+@media (min-width: 1201px){
+
+}
+
