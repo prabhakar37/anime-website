@@ -1,0 +1,71 @@
+.hero {
+    background-color: #242428;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: rgb(231, 227, 227);
+    /* border: 1px solid red; */
+}
+
+.slider{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-text-box{
+    width: 35%;
+    padding: 1.5rem 0;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 10px;
+
+    font-family: "Mozilla Text", sans-serif;
+}
+
+.slider-anime-title{
+    font-size: 2.5rem;
+    color: #FFDD95;
+}
+
+.anime-small-info{
+    margin: 2rem 0;
+    align-items: center;
+}
+
+.anime-small-info ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 2rem;
+    text-align: left;
+    align-items: center;
+}
+
+.anime-small-info li {
+  display: flex;
+  align-items: center;     
+  gap: 5px;                
+}
+
+.slider-image{
+    width: 65%;
+}
+
+.slider-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.material-symbols-outlined {
+  font-size: 18px;         /* Adjust icon size if needed */
+  vertical-align: middle;
+}

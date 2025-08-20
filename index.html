@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
     <title>aniHome</title>
 </head>
 <body style="background-color: #5b5959;">
@@ -11,7 +14,12 @@
     <!--  Navbar / Header -->
     <header>
         <h1>AniHome</h1>
-        <input type="text" placeholder="search here" id="search-bar">
+        
+        <form action="" autocomplete="off">
+            <input type="text" class="form-control search-input" name="keyword" placeholder="Search anime..." required="">
+            <button type="submit" class="search-icon"><span class="material-symbols-outlined">search</span></button>
+        </form>
+        <!-- <input type="text" placeholder="search here" id="search-bar"> -->
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -27,10 +35,7 @@
     </header>
 
       <!-- Hero -->
-  <section class="hero">
-    <h2>Welcome to AniHome</h2>
-    <p>Discover your favorite anime – streaming free with latest updates!</p>
-  </section>
+  <section class="hero"></section>
 
   <!-- Trending Section -->
   <section class="section">
