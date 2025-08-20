@@ -96,52 +96,6 @@ button{
     padding: 8px;
 }
 
-
-
-
-
-
-
-/* Anime Card Section */
-    .section {
-      font-family: "Mozilla Text", sans-serif;
-      padding: 40px;
-      background-color: #242428;
-    }
-    .section h2 {
-      margin-bottom: 20px;
-    }
-    .anime-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 20px;
-    }
-    .anime-card {
-      background: #1a1a1a;
-      border-radius: 5px;
-      overflow: hidden;
-      transition: transform 0.3s;
-    }
-    .anime-card img {
-      width: 100%;
-      display: block;
-    }
-    .anime-card:hover {
-      transform: scale(1.05);
-    }
-    .anime-info {
-      padding: 10px;
-    }
-    .anime-info h3 {
-      margin: 5px 0;
-      font-size: 1rem;
-    }
-    .anime-info p {
-      font-size: 0.9rem;
-      color: #bbb;
-    }
-
-
 /* Footer */
     footer {
       font-family: "Mozilla Text", sans-serif;

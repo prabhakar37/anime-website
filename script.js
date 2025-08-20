@@ -1,5 +1,7 @@
 const hero = document.querySelector(".hero")
 const slider = document.querySelector(".slider");
+const animeGrid =   document.querySelector(".anime-grid")
+
 
 
 async function fetchData(){
@@ -8,7 +10,6 @@ async function fetchData(){
     const result = await resData.json();
     // console.log(result);
     // console.log(result.data);  // it peovide objs ka Array  [ {},{},....]
-
 
     let j = 0;
     setInterval(function(){
@@ -44,8 +45,42 @@ fetchData()
 
 
 
+// for trending card
+
+async function fetchPopularData() {
+  const res = await fetch("https://api.jikan.moe/v4/anime?order_by=members&sort=desc&limit=10");
+  const data = await res.json();
+
+  data.data.forEach(ele => {
+    // calling anime card function
+    animeGrid.appendChild(cardFunc(ele))
+  });
+}
+
+fetchPopularData();
 
 
+// make animeCard Function
+function cardFunc(ele) {
+  const animeCard = document.createElement("div");
+    animeCard.className = "anime-card";
 
+    const img = document.createElement("img");
+    img.src = ele.images.jpg.image_url;
+    img.alt = ele.title;
+
+    const animeInfo = document.createElement("div");
+    animeInfo.className = "anime-info";
+
+    const h3 = document.createElement("h3");
+    h3.textContent = ele.title;
+
+    const p = document.createElement("p");
+    p.textContent = `⭐ ${ele.score}`;
+
+    animeInfo.append(h3, p);
+    animeCard.append(img, animeInfo);
+  return animeCard;
+}
 
 

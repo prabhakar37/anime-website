@@ -1,0 +1,64 @@
+/* Anime Card Section */
+
+.section {
+    font-family: "Mozilla Text", sans-serif;
+    padding: 40px;
+    background-color: #242428;
+        background-color: #29292d;
+
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    color: #ffdd94;
+}
+
+.anime-grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 200px;   /* Set fixed width for each card */
+  gap: 20px;
+  padding: 2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE/Edge */
+}
+
+.anime-grid::-webkit-scrollbar {
+  display: none;               /* Chrome/Safari */
+}
+
+.anime-card {
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  border: 1px solid #ffdd94;
+}
+
+
+.anime-card img {
+    width: 100%;
+    display: block;
+}
+
+.anime-card:hover {
+    border: none;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 2px 1px rgba(185, 164, 4, 0.3);
+}
+
+.anime-info {
+    padding: 10px;
+}
+
+.anime-info h3 {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.anime-info p {
+    font-size: 0.9rem;
+    color: #bbb;
+}
