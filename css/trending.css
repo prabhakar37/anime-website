@@ -3,8 +3,8 @@
 .section {
     font-family: "Mozilla Text", sans-serif;
     padding: 40px;
-    background-color: #242428;
-        background-color: #29292d;
+    /* background-color: #242428; */
+    background-color: #29292d;
 
 }
 

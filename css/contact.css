@@ -1,0 +1,98 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #4f4e4e;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;                     /* will take all remaining space */
+    height: 100%;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;                     /* will take all remaining space */
+    padding: 1rem;
+    width: 50%;
+}
+
+.formfield-container{
+    display: flex;
+    flex-direction: column;
+}
+.fade-form-text{
+    color: orange;
+    font-size: 20px;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+input {
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 5px;
+    background-color: rgba(185, 205, 237, 0.15);
+    border-right:  5px solid rgb(0, 0, 0);
+    border-bottom: 5px solid rgb(0, 0, 0);
+    font-size: medium;
+    color: aliceblue;
+    font-family: "Mozilla Text", sans-serif;
+
+}
+
+textarea{
+    border-radius: 10px;
+    background-color: rgba(185, 205, 237, 0.15);
+    border-right:  5px solid rgb(0, 0, 0);
+    border-bottom: 5px solid rgb(0, 0, 0);
+    padding: 0 5px;
+    color: aliceblue;
+    /* word-spacing: normal; */
+
+}
+.send-button{
+    display: flex;
+}
+
+.send-button :hover{
+  background-color: rgb(236, 196, 230);
+  transition: 0.8s ease-in;
+  font-weight: bold;
+}
+
+.send-button button{
+    font-size: 25px;
+    margin: 1rem;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    border-bottom: 5px solid rgb(0, 0, 0);
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    font-family: "Mozilla Text", sans-serif;
+    /* padding: 20px 20px 20px 25%; */
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+.social-media a{
+    color: white;
+    text-decoration: none;
+}
+.social-media a:hover{
+    color: yellow;
+}
