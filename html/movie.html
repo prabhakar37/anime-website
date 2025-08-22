@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./css/hero.css">
-    <link rel="stylesheet" href="./css/trending.css">
-    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="../css/movie.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
-    <title>aniHome</title>
+    <title>movie</title>
 </head>
-<body style="background-color: #5b5959;">
 
-    <!--  Navbar / Header -->
+<body>
+
     <header>
         <h1>AniHome</h1>
-        
+
         <form action="" autocomplete="off">
-            <input type="text" class="form-control search-input" name="keyword" placeholder="Search anime..." required="">
+            <input type="text" class="form-control search-input" name="keyword" placeholder="Search anime..."
+                required="">
             <button type="submit" class="search-icon"><span class="material-symbols-outlined">search</span></button>
         </form>
         <!-- <input type="text" placeholder="search here" id="search-bar"> -->
@@ -35,26 +35,22 @@
             </div>
         </nav>
     </header>
+    <section class="movie-container">
+        <!-- <div class="search-filter"></div> -->
 
-      <!-- Hero -->
-  <section class="hero"></section>
+        <div class="movie-head">
+            <h3>Movie Anime</h3>
+            <button>Filter</button>
+        </div>
+        <div class="anime-grid"></div>
 
-  <!-- Trending Section -->
-  <section class="section">
-    <h2>🔥 Trending Now</h2>
-    <div class="anime-grid"></div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 AniHome. All rights reserved.</p>
-  </footer>
+    <footer>
+        <p>© 2025 AniHome. All rights reserved.</p>
+    </footer>
 
-    <script src="./script.js"></script>
+    <script src="../js/movie.js"></script>
 </body>
+
 </html>
-
-
-
-
-
