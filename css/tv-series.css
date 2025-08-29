@@ -41,14 +41,10 @@ body, html {
 }
 
 .anime-card {
-    /* height: 300px; */
-    /* width: 200px; */
     margin-bottom: 1.5rem;
     border-radius: 5px;
     overflow: hidden;
     transition: transform 0.3s;
-    /* border: 2px solid #ffdd94; */
-
     justify-content: space-between;
 }
 
@@ -60,10 +56,8 @@ body, html {
 }
 
 .anime-card:hover {
-    /* border: none; */
     border: 1px solid #ffdd94;
     transform: scale(1.05);
-    /* box-shadow: 5px 5px 2px 1px rgba(185, 164, 4, 0.3); */
 }
 
 .anime-info {
@@ -88,14 +82,11 @@ body, html {
     align-items: center;
 }
 
-
-
 /* TV pagination css */
 .tv-pagination {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    /* background-color: #6e6c6c; */
     padding-bottom: 30px;
 }
 
@@ -112,9 +103,8 @@ body, html {
 
 @media (max-width: 576px){
    .anime-grid {
-        grid-template-columns: repeat(2, 1fr) !important; /* force 2 columns */
+        grid-template-columns: repeat(2, 1fr) !important; 
     }
-
     .series-head h3{
         font-size: 20px;
     }
@@ -122,11 +112,11 @@ body, html {
 
 @media (min-width: 577px) and (max-width: 768px){
     .anime-grid {
-        grid-template-columns: repeat(3, 1fr) !important; /* force 2 columns */
+        grid-template-columns: repeat(3, 1fr) !important;
     }
 }
 @media (min-width: 769px) and (max-width: 992px){
     .anime-grid {
-        grid-template-columns: repeat(4, 1fr) !important; /* force 2 columns */
+        grid-template-columns: repeat(4, 1fr) !important;
     }
 }

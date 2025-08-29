@@ -3,9 +3,7 @@
 .section {
     font-family: "Mozilla Text", sans-serif;
     padding: 40px;
-    /* background-color: #242428; */
     background-color: #29292d;
-
 }
 
 .section h2 {
@@ -22,12 +20,12 @@
   overflow-x: auto;
   scroll-behavior: smooth;
 
-  scrollbar-width: none;        /* Firefox */
-  -ms-overflow-style: none;     /* IE/Edge */
+  scrollbar-width: none;       
+  -ms-overflow-style: none;     
 }
 
 .anime-grid::-webkit-scrollbar {
-  display: none;               /* Chrome/Safari */
+  display: none;             
 }
 
 .anime-card {

@@ -55,11 +55,8 @@ html {
 }
 
 .anime-card:hover {
-    /* border: none; */
     border: 2px solid #ffdd94;
-
     transform: scale(1.05);
-    /* box-shadow: 5px 5px 2px 1px rgba(185, 164, 4, 0.3); */
 }
 
 .anime-info {
@@ -89,7 +86,6 @@ html {
 @media (max-width: 576px) {
     .anime-grid {
         grid-template-columns: repeat(2, 1fr) !important;
-        /* force 2 columns */
     }
 
     .movie-head h3 {

@@ -8,7 +8,7 @@ async function fetchData() {
     const resData = await fetch(URL);
     const result = await resData.json();
     // console.log(result);
-    // console.log(result.data);  // it peovide objs ka Array  [ {},{},....]
+    // console.log(result.data); 
 
     let j = 0;
     setInterval(function () {
@@ -44,7 +44,6 @@ fetchData();
 
 
 // for trending card
-
 async function fetchPopularData() {
   try {
     const res = await fetch(
@@ -84,3 +83,21 @@ function cardFunc(ele) {
   animeCard.append(img, animeInfo);
   return animeCard;
 }
+
+// Sidebar fucntionality
+const menuButton = document.getElementById("menu-button");
+const sidebar = document.getElementById("sidebar");
+const closeBtn = document.getElementById("closeBtn");
+const wrapper = document.querySelector(".wrapper");
+
+menuButton.addEventListener("click", () => {
+  sidebar.style.display = "inline-block";
+  menuButton.style.display = "none";
+  wrapper.classList.add("no-scroll");
+});
+
+closeBtn.addEventListener("click", () => {
+  sidebar.style.display = "none";
+  menuButton.style.display = "block";
+  wrapper.classList.remove("no-scroll");
+});

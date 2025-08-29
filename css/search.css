@@ -8,10 +8,6 @@ body, html{
     background-color: rgb(70, 69, 69);
 }
 
-/* Images- container */
-.searched-item-container{
-}
-
 .searched-item-container h3{
     margin: 2rem 40px 1rem;
     color: #FFDD95;

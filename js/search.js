@@ -2,13 +2,10 @@ const searchedcontainer = document.querySelector(".searched-item-container");
 const animeBox = document.querySelector(".anime-box");
 const resultText = document.querySelector(".searched-item-container h3");
 
-// user search
+// form search
 const form = document.querySelector("#form-box");
-
 const params = new URLSearchParams(window.location.search);
 const searchValue = params.get("search");
-// console.log(searchValue);
-// const searchValue = searchVal.trim()
 
 if (searchValue.trim()) {
   fetchSearchData(searchValue);
@@ -17,20 +14,19 @@ if (searchValue.trim()) {
 }
 
 async function fetchSearchData(searchValue) {
-  // ku nhi directly API me hi filter kr le
-
   try {
     const page = 2;
     const queryTerm = searchValue;
-
     // console.log(resultText);
+
     console.log(queryTerm);
 
     animeBox.innerHTML = "";
     const allAnime = [];
-    const res = await fetch(`https://api.jikan.moe/v4/anime?q=${queryTerm}&page=${page}&limit=25`);
+    const res = await fetch(
+      `https://api.jikan.moe/v4/anime?q=${queryTerm}&page=${page}&limit=25`
+    );
     const data = await res.json();
-    // console.log(data.data);
 
     // tag creation
     resultText.innerHTML = "";
@@ -48,7 +44,6 @@ async function fetchSearchData(searchValue) {
     console.log(error);
   }
 }
-// fetchSearchData()
 
 // make animeCard Function
 function cardCreateFunc(ele) {
