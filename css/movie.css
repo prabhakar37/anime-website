@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     background-color: #29292d;
 }
 
 .movie-container {
     font-family: "Mozilla Text", sans-serif;
-
 }
 
 .movie-head {
@@ -18,13 +18,19 @@ body, html {
     justify-content: space-between;
     align-items: baseline;
     margin: 2rem 40px 0;
+    font-size: 22px;
 }
 
 .movie-head h3 {
     color: #FFDD95;
 }
 
-.movie-head button {}
+.movie-head button {
+    border-radius: 5px;
+    padding: 8px 10px;
+    cursor: pointer;
+    background-color: #FFDD95;
+}
 
 .anime-grid {
     display: grid;
@@ -35,17 +41,12 @@ body, html {
 }
 
 .anime-card {
-    /* height: 300px; */
-    /* width: 200px; */
     margin-bottom: 1.5rem;
     border-radius: 5px;
     overflow: hidden;
     transition: transform 0.3s;
-    /* border: 2px solid #ffdd94; */
-
     justify-content: space-between;
 }
-
 
 .anime-card img {
     width: 100%;
@@ -81,4 +82,21 @@ body, html {
     font-size: 0.9rem;
     color: #bbb;
     align-items: center;
+}
+
+
+/* media query */
+@media (max-width: 576px) {
+    .anime-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        /* force 2 columns */
+    }
+
+    .movie-head h3 {
+        font-size: 20px;
+    }
+
+    #nav-title {
+        display: inline-block !important;
+    }
 }

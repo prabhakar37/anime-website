@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body, html{
+body, html, .wrapper{
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -22,8 +22,7 @@ body, html{
 .form-box{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;                     /* will take all remaining space */
-    padding: 1rem;
+    flex-grow: 1;                    
     width: 50%;
 }
 
@@ -31,34 +30,28 @@ body, html{
     display: flex;
     flex-direction: column;
 }
+
 .fade-form-text{
-    color: orange;
+    color: #ffcc00;
     font-size: 20px;
     padding: 0.5rem;
     letter-spacing: 1px;
 }
 input {
-    border-radius: 10px;
+    border-radius: 8px;
     box-sizing: border-box;
-    padding: 20px 5px;
-    background-color: rgba(185, 205, 237, 0.15);
-    border-right:  5px solid rgb(0, 0, 0);
-    border-bottom: 5px solid rgb(0, 0, 0);
+    border-right:  3px solid rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
     font-size: medium;
-    color: aliceblue;
     font-family: "Mozilla Text", sans-serif;
-
 }
 
 textarea{
-    border-radius: 10px;
-    background-color: rgba(185, 205, 237, 0.15);
-    border-right:  5px solid rgb(0, 0, 0);
-    border-bottom: 5px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    border-right:  3px solid rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
     padding: 0 5px;
-    color: aliceblue;
-    /* word-spacing: normal; */
-
+    font-size: 15px;
 }
 .send-button{
     display: flex;
@@ -74,10 +67,10 @@ textarea{
     font-size: 25px;
     margin: 1rem;
     padding: 8px;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
     border: 1px solid rgb(0, 0, 0);
-    border-bottom: 5px solid rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
 }
 
 .social-media {
@@ -85,8 +78,7 @@ textarea{
     justify-content: center;
     gap: 3rem;
     font-family: "Mozilla Text", sans-serif;
-    /* padding: 20px 20px 20px 25%; */
-    padding: 15px 0;
+    padding: 22px 0;
     font-size: 0.9rem;
 }
 .social-media a{
@@ -94,5 +86,5 @@ textarea{
     text-decoration: none;
 }
 .social-media a:hover{
-    color: yellow;
+    color: rgb(246, 80, 8);
 }

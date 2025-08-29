@@ -46,10 +46,8 @@ body, html{
 }
 
 .anime-card:hover {
-    /* border: none; */
     border: 1px solid #ffdd94;
     transform: scale(1.05);
-    /* box-shadow: 5px 5px 2px 1px rgba(185, 164, 4, 0.3); */
 }
 
 .anime-info {
