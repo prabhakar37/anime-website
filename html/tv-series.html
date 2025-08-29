@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/tv-series.css">
+    <link rel="stylesheet" href="/24-animeX/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
     <title>movie</title>
@@ -13,51 +14,71 @@
 
 <body>
 
-    <header>
-        <a href="/24-animeX/index.html"><h1>AniHome</h1></a>
-        
-        <form action="" autocomplete="off">
-            <input type="text" class="form-control search-input" name="keyword" placeholder="Search anime..."
-                required="">
-            <button type="submit" class="search-icon"><span class="material-symbols-outlined">search</span></button>
-        </form>
-        <!-- <input type="text" placeholder="search here" id="search-bar"> -->
-        <nav>
-            <ul>
-                <li><a href="/24-animeX/index.html">Home</a></li>
-                <li><a href="/24-animeX/html/movie.html">Movies</a></li>
-                <li><a href="/24-animeX/html/tv-series.html">TV Series</a></li>
-                <li><a href="/24-animeX/html/contact.html">Contact</a></li>
-            </ul>
-            <div class="nav-button">
-                <button>Login</button>
-                <button>Dropdwn</button>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <!-- <button class="close-btn" id="closeBtn">&times;</button> -->
+        <button id="closeBtn" class="close-btn"><span class="material-symbols-outlined">close</span></button>
+        <ul>
+            <li><a href="/24-animeX/index.html">Home</a></li>
+            <li><a href="/24-animeX/html/movie.html">Movies</a></li>
+            <li><a href="/24-animeX/html/tv-series.html">TV Series</a></li>
+            <li><a href="/24-animeX/html/contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <div class="wrapper">
+        <header>
+            <a href="/24-animeX/index.html">
+                <h1>AniHome</h1>
+                <h2 id="nav-title">AH</h2>
+
+            </a>
+
+            <form action="/24-animeX/html/search.html" id="form-box">
+                <input type="text" name="search" class="search-input" placeholder="search anime" required>
+                <button class="search-button"><span class="material-symbols-outlined">search</span></button>
+            </form>
+
+            <nav>
+                <ul>
+                    <li><a href="/24-animeX/index.html">Home</a></li>
+                    <li><a href="/24-animeX/html/movie.html">Movies</a></li>
+                    <li><a href="/24-animeX/html/tv-series.html">TV Series</a></li>
+                    <li><a href="/24-animeX/html/contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-button">
+                    <button class="login-button">Login</button>
+                </div>
+            </nav>
+            <button id="menu-button" class="menu"><span class="material-symbols-outlined">menu</span></button>
+        </header>
+
+        <section class="series-container">
+            <!-- <div class="search-filter"></div> -->
+
+            <div class="series-head">
+                <h3>TV Series</h3>
+                <button>Filter</button>
             </div>
-        </nav>
-    </header>
-    <section class="series-container">
-        <!-- <div class="search-filter"></div> -->
 
-        <div class="series-head">
-            <h3>TV Series Anime</h3>
-            <button>Filter</button>
-        </div>
-        
-        <div class="anime-grid"></div>
+            <div class="anime-grid"></div>
 
-        <div class="tv-pagination">
-            <button class="previous">Previous</button>
-            <button class="next">Next</button>
-        </div>
+            <div class="tv-pagination">
+                <button class="previous">Previous</button>
+                <button class="next">Next</button>
+            </div>
 
-    </section>
+        </section>
 
-    <footer>
-        <p>© 2025 AniHome. All rights reserved.</p>
-    </footer>
+        <footer>
+            <p>© 2025 AniHome. All rights reserved.</p>
+        </footer>
+
+    </div>
+
 
     <!-- <script src="../js/movie.js"></script> -->
-     <script src="../js/tv-series.js"></script>
+    <script src="../js/tv-series.js"></script>
 </body>
-
 </html>
